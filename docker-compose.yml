@@ -4,13 +4,13 @@ services:
     build:
       context: .
     expose:
-      - 8080
+      - 8081
     ports:
-      - 8080:8080
+      - 8081:8081
     user: root
     command: npm run start
     environment:
-      - PORT=8080
+      - PORT=8081
     volumes:
       - '.:/service'
       - '/service/node_modules'
